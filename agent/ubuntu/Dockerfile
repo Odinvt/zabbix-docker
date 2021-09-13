@@ -89,7 +89,6 @@ RUN set -eux && \
             --with-libmodbus \
             --with-ldap \
             --with-openssl \
-            --enable-ipv6 \
             --silent && \
     make -j"$(nproc)" -s && \
     cp /tmp/zabbix-${ZBX_VERSION}/src/zabbix_agent/zabbix_agentd /usr/sbin/zabbix_agentd && \
